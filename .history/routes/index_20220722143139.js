@@ -17,19 +17,5 @@ router.get('/auth/google', passport.authenticate(
   }
   ));
 
-// Google OAuth callback route
-router.get('/oauth2callback', passport.authenticate(
-  'google',
-  {
-    successRedirect: '/',
-    failureRedirect: '/'
-  }
-));
-
-router.get('/logout', function(req, res){
-  req.logout(function() {
-    res.redirect('/');
-  });
-});
-
+  
 module.exports = router;
