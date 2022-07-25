@@ -1,15 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 100vh;
-  font-family: Hack, monospace;
 }
-
 
 a {
   color: #00B7FF;
@@ -31,14 +23,4 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-div {
-  color: #727272;
-  text-align: center;
 }

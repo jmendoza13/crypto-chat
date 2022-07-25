@@ -38,7 +38,24 @@ nav {
   margin: 0;
 }
 
+
 div {
   color: #727272;
   text-align: center;
 }
+
+p {
+  margin: 16px;
+  font-size: 96px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+  
+      
+      
+    
+  
+
