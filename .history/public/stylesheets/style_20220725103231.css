@@ -9,7 +9,12 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  min-height: 100vh;
   font-family: Hack, monospace;
 }
 
-
+nav {
+  /* display: flex; */
+  flex-direction: row;
+  align-items: center;
+} 

@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+
+
+<% articles.forEach(function(a) { %>
+    <div>
+        <h1><%=a.title %></h1>
+        <p><%=a.createdAt %></p>
+        <p><%=a.description %></p>
+    </div>
+ <% }); %>
+
+
+
+
+
+
+<%- include('../partials/footer') %>
+

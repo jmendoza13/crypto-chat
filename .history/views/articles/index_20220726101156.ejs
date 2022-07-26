@@ -1,0 +1,24 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <h1 class="mb-4">Articles</h1>
+    <a href="/articles/new" class="btn btn-success">New Artcle</a>
+    <div class="card mt-4">
+
+<% articles.forEach(function(a) { %>
+    <div>
+        <h1><%=a.title %></h1>
+        <p><%=a.createdAt %></p>
+        <p><%=a.description %></p>
+    </div>
+    <% }); %>
+</div>
+</div>
+
+
+
+
+
+
+<%- include('../partials/footer') %>
+

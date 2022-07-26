@@ -16,8 +16,8 @@
 <body>  
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">CryptoChat</a>
-        <a href="/articles">Articles</a>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <a href="/posts">Posts</a>
         <a href="/prices">Crypto Prices (API)</a>
           <a href="/">Home Page</a>
           <% if (user) { %>
@@ -25,11 +25,6 @@
           <% } else { %>
             <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
           <% } %>
-
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
       </nav>
     </div>
 

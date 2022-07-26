@@ -12,4 +12,11 @@ body {
   font-family: Hack, monospace;
 }
 
+nav {
+  flex-direction: row;
+  align-items: center;
+  margin: 25px;
+  padding: 16px;
+  display: inline;
+} 
 

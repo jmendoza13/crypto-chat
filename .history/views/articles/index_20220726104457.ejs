@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+
+    <div class="container">
+        <h1 class="mb-4">Articles</h1>
+        <a href="/articles/new" class="btn btn-success">New Artcle</a>
+
+
+        <% articles.forEach(function(a) { %>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <div 
+                    <%=a.title %>
+                </div>
+                <div class="card-date text-muted mb-2">
+                    <%=a.createdAt %>
+                </div>
+                <div class="" card-body>
+                    <%=a.description %>
+                        </p>
+                </div>
+                <% }); %>
+            </div>
+    </div>
+
+
+
+
+
+
+    <%- include('../partials/footer') %>
