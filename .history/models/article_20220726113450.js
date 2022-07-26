@@ -5,7 +5,7 @@ const articleSchema = new Schema({
     title: {
         type: String,
     },
-    createdDate: {
+    createdAt: {
         type: Date,
         default: function() {
             let date = new Date();

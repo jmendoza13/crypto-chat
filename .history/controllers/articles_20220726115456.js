@@ -26,7 +26,7 @@ function create(req, res) {
   newArticle.save(function(err) {
     if (err) return res.redirect('/articles/new');
     console.log(newArticle);
-    res.redirect(`articles/${newArticle._id}`)
+    res.redirect('articles/show', { newArticle })
   });
 }
 

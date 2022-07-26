@@ -1,3 +1,4 @@
+const article = require('../models/article');
 const Article = require('../models/article');
 
 module.exports = {
@@ -22,14 +23,14 @@ function show(req, res) {
 
 function create(req, res) {
   console.log("create", req.body)
-  const newArticle = new Article(req.body)
-  newArticle.save(function(err) {
-    if (err) return res.redirect('/articles/new');
-    console.log(newArticle);
-    res.redirect(`articles/${newArticle._id}`)
+  const newArticle = new Article(req.body, function(err){
+    newArticle.save(function(err) {
+      if (err) return res.redirect('/articles/new');
+      console.log(article);
+      res.redirect('articles/show', { newArticle })
   });
+})
 }
-
 
 function newArticle(req, res) {
   res.render("articles/new");
