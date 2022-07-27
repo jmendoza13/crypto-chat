@@ -55,9 +55,7 @@
                             <div class="card-text mb-2" card-body>
                                 <%=a.name %>
                             </div>
-                            <form action="/comments<%= a._id %>?_method=DELETE" method="POST">
-                            <button type="submit" class="btn btn-danger">DELETE</button>
-                            </form>
+                            <form action="/articles/<% = a._id %>?_method=DELETE"></form>
                         </div>
                     </div>
                     <% }); %>

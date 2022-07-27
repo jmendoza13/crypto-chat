@@ -19,5 +19,5 @@ function create(req, res) {
 }
 
 function deleteComment(req, res) {
-    res.redirect('/articles')
+    res.redirect('articles')
 }

@@ -43,24 +43,6 @@
                         </h4>
                     </div>
                 </div>
-                <% article.comments.forEach(function(a) { %>
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div class="card-date text-muted mb-2">
-                                <%=a.createdAt %>
-                            </div>
-                            <div class="card-text mb-2" card-body>
-                                <%=a.description %>
-                            </div>
-                            <div class="card-text mb-2" card-body>
-                                <%=a.name %>
-                            </div>
-                            <form action="/comments<%= a._id %>?_method=DELETE" method="POST">
-                            <button type="submit" class="btn btn-danger">DELETE</button>
-                            </form>
-                        </div>
-                    </div>
-                    <% }); %>
-            </div>
+
         </form>
         <%- include('../partials/footer') %>

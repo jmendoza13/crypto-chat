@@ -5,7 +5,7 @@ var isLoggedIn = require('../config/auth');
 
 router.post('/:id/comments',isLoggedIn, commentsCtrl.create)
 
-router.delete('/:id',isLoggedIn, commentsCtrl.delete);
+router.delete('/comments/:id', reviewsCtrl.delete);
 
 
 module.exports = router;

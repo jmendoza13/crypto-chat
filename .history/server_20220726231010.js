@@ -40,7 +40,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
   res.locals.user = req.user;
   next();
 });
@@ -50,7 +50,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/articles', articlesRouter);
 app.use('/prices', pricesRouter);
-app.use('/comments', commentsRouter);
+app.use('/articles', commentsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -3,12 +3,8 @@ const Schema = mongoose.Schema;
 
 const commentSchema = new Schema({
     userId: {
-        type: Schema.Types.ObjectId,
-        ref: 'User',
-        timestamps: true
+        type: 
     },
-    name: String,
-
     createdDate: {
         type: Date,
         default: function () {

@@ -13,11 +13,13 @@ function create(req, res) {
     Article.findById(req.params.id, function(err, article) {
         article.comments.push(req.body);
         article.save(function(err) {
-            res.redirect(`/articles/${article._id}`)
-        });;
+            res.redirect(`/articles/${article._id}`);
+        });
     });
 }
 
 function deleteComment(req, res) {
-    res.redirect('/articles')
+    res.redirect('/articles');
 }
+
+

@@ -8,5 +8,4 @@ router.get('/new',isLoggedIn, articlesCtrl.new);
 router.get('/:id',isLoggedIn, articlesCtrl.show);
 router.post('/',isLoggedIn, articlesCtrl.create);
 
-
 module.exports = router;

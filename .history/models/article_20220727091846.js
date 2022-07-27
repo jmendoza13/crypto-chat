@@ -2,18 +2,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const commentSchema = new Schema({
-    userId: {
-        type: Schema.Types.ObjectId,
-        ref: 'User',
-        timestamps: true
+    title: {
+        type: String,
     },
-    name: String,
-
     createdDate: {
         type: Date,
         default: function () {
             let date = new Date();
-            return date;
+            return date.now;
         }
     },
     description: {
@@ -30,15 +26,15 @@ const articleSchema = new Schema({
         type: Date,
         default: function () {
             let date = new Date();
-            return date;
+            return date.now;
         }
     },
     description: {
         type: String,
     },
+}, {
     comments: [commentSchema],
 })
-
 
 
 module.exports = mongoose.model('Article', articleSchema);

@@ -1,0 +1,47 @@
+<%- include('../partials/header') %>
+
+    <div class="container">
+        <!-- <h1 class="mb-4">Articles</h1> -->
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <h2>
+                        <%= article.title %>
+                    </h2>
+                </h4>
+
+                <div class="card-date text-muted mb-2">
+                    <p>
+                        <%= article.createdAt %>
+                    </p>
+                </div>
+
+                <div class="card-text mb-2" card-body>
+                    <h4>Description</h4>
+                    <p>
+                        <%= article.description %>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <form action="/articles/:id" method="POST"></form>
+        <br>
+        <h4>Share your thoughts below!</h4>
+        <div class="container">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h4 class="card-title">
+
+                        <div class="form-group">
+                            <label for="description"></label>
+                            <textarea name="description" name="description" class="form-control"></textarea>
+                        </div>
+                        <br>
+                        <button type="Submit" class="btn btn-primary">Add Comment</button>
+                    </h4>
+                </div>
+            </div>
+
+            <%- include('../partials/footer') %>

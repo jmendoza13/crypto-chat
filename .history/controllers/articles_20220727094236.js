@@ -4,7 +4,7 @@ module.exports = {
     index,
     show,
     new: newArticle,
-    create,
+    create
 }
 
 function index(req, res) {
@@ -33,4 +33,3 @@ function create(req, res) {
 function newArticle(req, res) {
   res.render("articles/new");
 }
-

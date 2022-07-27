@@ -27,7 +27,7 @@
         </div>
 
         <br>
-        <form action="/comments/<%= article._id %>/comments" method="POST">
+        <form action="/articles/<%= a._id %>/comments" method="POST">
             <p>Share Your Thoughts Below!</p>
             <div class="container">
                 <div class="card mt-4">
@@ -36,31 +36,13 @@
 
                             <div class="form-group">
                                 <label for="comment"></label>
-                                <textarea name="description"  class="form-control"></textarea>
+                                <textarea name="comment"  class="form-control"></textarea>
                             </div>
                             <br>
                             <button type="Submit" class="btn btn-primary">Add Comment</button>
                         </h4>
                     </div>
                 </div>
-                <% article.comments.forEach(function(a) { %>
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div class="card-date text-muted mb-2">
-                                <%=a.createdAt %>
-                            </div>
-                            <div class="card-text mb-2" card-body>
-                                <%=a.description %>
-                            </div>
-                            <div class="card-text mb-2" card-body>
-                                <%=a.name %>
-                            </div>
-                            <form action="/comments<%= a._id %>?_method=DELETE" method="POST">
-                            <button type="submit" class="btn btn-danger">DELETE</button>
-                            </form>
-                        </div>
-                    </div>
-                    <% }); %>
-            </div>
+
         </form>
         <%- include('../partials/footer') %>
