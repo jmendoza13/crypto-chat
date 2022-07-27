@@ -1,0 +1,24 @@
+<%- include('../partials/header') %>
+
+<h1>All CryptoChat Blog articles</h1>
+
+<% articles.forEach(function(a) { %>
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4 class="card-title">
+                <%=a.title %>
+            </h4>
+            <div class="card-date text-muted mb-2">
+                <%=a.createdAt.toLocaleDateString() %>
+            </div>
+            <div class="card-text mb-2" card-body>
+                <%=a.description %>
+                    <a href="articles/<%= a.id %>" class="btn btn-primary">Read More</a>
+
+            </div>
+        </div>
+    </div>
+    <% }); %>
+</div>%></h2>
+
+<%- include('../partials/footer') %>

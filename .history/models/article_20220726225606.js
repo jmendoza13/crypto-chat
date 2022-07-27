@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema; 
 
 const commentSchema = new Schema({
     title: {
@@ -7,7 +7,7 @@ const commentSchema = new Schema({
     },
     createdDate: {
         type: Date,
-        default: function () {
+        default: function() {
             let date = new Date();
             return date.now;
         }
@@ -24,7 +24,7 @@ const articleSchema = new Schema({
     },
     createdDate: {
         type: Date,
-        default: function () {
+        default: function() {
             let date = new Date();
             return date.now;
         }
@@ -34,7 +34,8 @@ const articleSchema = new Schema({
     },
 }, {
     comments: [commentSchema],
-})
+  }) 
 
 
+  
 module.exports = mongoose.model('Article', articleSchema);

@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+
+
+
+<h2>Title</h2>
+<div class="card mt-4">
+    <div class="card-body">
+        <h4 class="card-title">
+<p><%= article.title %></p>
+</h4>
+<div class="card-date text-muted mb-2">
+<h2>Created At</h2>
+</div>
+<div class="card-text mb-2" card-body>
+<h2><%= article.createdAt.toLocaleDateString() %></h2>
+</div>
+<h2>Description</h2>
+<h2><%= article.description %></h2>
+
+
+<%- include('../partials/footer') %>
