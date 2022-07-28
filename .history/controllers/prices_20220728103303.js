@@ -1,6 +1,6 @@
 const Post = require('../models/price');
 const fetch = require('node-fetch');
-const rootURL = 'https://api.coinlore.net/api/tickers/?&limit=100'
+const rootURL = 'https://api.coinlore.net/api/tickers/?start=1&limit=100'
 
 module.exports = {
     index,
@@ -14,6 +14,6 @@ async function index(req, res) {
     const response = await fetch(`${rootURL}manga` , {method: 'GET'});
     const jsonApi = await response.json();
     const cryptos = jsonApi.data;
-    res.render('articles/prices', {cryptos})
+    res.render('cryptos/all', {cryptos})
 }
 

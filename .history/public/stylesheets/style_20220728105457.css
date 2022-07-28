@@ -12,7 +12,9 @@ body {
   font-family: Hack, monospace;
 }
 
-
+nav > div {
+  width: cover;
+}
 
  #gIcon {
   width: 34px;

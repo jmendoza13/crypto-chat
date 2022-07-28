@@ -1,6 +1,6 @@
 const Post = require('../models/price');
 const fetch = require('node-fetch');
-const rootURL = 'https://api.coinlore.net/api/tickers/?&limit=100'
+const rootURL = 'https://api.coinlore.net/api/tickers/?&limit=50'
 
 module.exports = {
     index,

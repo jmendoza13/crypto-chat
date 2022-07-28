@@ -1,35 +1,18 @@
 <%- include('../partials/header') %>
 
-<br>
 <h1>You are now viewing the most up to date cryptocurrencies on the market</h1>
 
-<table id="list">
-  <thead>
-    <tr>
-      
-      <th>Symbol</th>
-      <th>Name<br></th>
-      <th>Rank</th>
-      <th>USD Price</th>
-      <th>BTC Price</th>
-      <th>24H Change</th>
-    </tr>
-  </thead>
-  <tbody>
-
   <% cryptos.forEach(x => { %>
-      <tr>
-      <td><%= x.symbol %></td>
-      <td><%= x.name %></td>
-      <td><%= x.rank %></td>
-      <td><%= x.price_usd %></td>
-      <td><%= x.price_btc %></td>
-      <td><%= x.percent_change_24h %></td>
-    </tr>
-      <% })  %>
+      <h5><%= x.symbol %></h5>
+      <h5><%= x.name %></h5>
+      <h5><%= x.rank %></h5>
+      <h5><%= x.percent_change_24h %></h5>
       
-  </tbody>
-  </table>
+      <h5><%= x.price_usd %></h5>
+      <h5><%= x.btcPrice %></h5>
+
+   <% })  %>
+
 
 
 <!-- <table class="stable table-bordered" style="margin-top: 90px"> -->
