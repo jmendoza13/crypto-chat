@@ -20,7 +20,7 @@ function create(req, res) {
 
 async function deleteComment(req, res, next) {
     try {
-        const article = await Article.findOne({ 'comments._id': req.params.id, 'comments.userId': req.user._id }  );
+        const article = await Article.findById({'comments._id': req.params.id, });
         console.log(article)
         if (!article) throw new Error ('Will not work');
         article.comments.remove(req.params.id);
@@ -30,3 +30,13 @@ async function deleteComment(req, res, next) {
         return next(err);
     }
 }
+// 'comments.user': req.userId._id
+
+// async function deleteComment(req, res) {
+    
+//     let whatever = await Article.findOne({'comments._id': req.params.id})
+//     console.log(whatever)
+//     // await Article.deleteOne({_id : req.params.id})
+//     // await Article.save()
+//     res.redirect(`/articles/${req.params.id}`)
+// }

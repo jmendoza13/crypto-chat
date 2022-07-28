@@ -1,6 +1,6 @@
 const Post = require('../models/price');
 const fetch = require('node-fetch');
-const rootURL = 'https://api.coinranking.com/v2/coins?limit=10'
+const rootURL = 'https://api.coinranking.com/v2/coins'
 
 module.exports = {
     index,
@@ -15,9 +15,12 @@ module.exports = {
 
 async function index(req, res) {
     const response = await fetch(`${rootURL}` , { method: "GET" });
-    const values = await response.json();
-    const cryptos = values.data.coins;
-    res.render('articles/prices', {cryptos})
+    const five = await response.json();
+    const cryptos = five.data;
+    cryptos.forEach(async function(element){ 
+        
+    })
+    //res.render('cryptos/all', {cryptos})
     console.log(cryptos)
 }
 

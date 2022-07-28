@@ -1,0 +1,32 @@
+<%- include('../partials/header') %>
+  <h1>You are now viewing the most up to date cryptocurrencies on the market</h1>
+  <table class="stable table-bordered" style="margin-top: 90px">
+
+    <body>
+      <thead>
+        <tr>
+          <th scope="col">RANK</th>
+          <th scope="col">SYMBOL</th>
+          <th scope="col">NAME</th>
+          <th scope="col">UUID</th>
+          <th scope="col">BTC PRICE</th>
+          <th scope="col">TIER</th>
+          <th scope="col">PRICE</th>
+        </tr>
+      <tbody id="data"></tbody>
+      <% cryptos.forEach (funtion (crypto) { %>  
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        </tbody>
+        </thead>
+       <% }) %> 
+        </tbody>
+  </table>
+  </body>
+  <%- include('../partials/footer') %>

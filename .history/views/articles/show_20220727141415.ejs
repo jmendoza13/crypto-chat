@@ -27,20 +27,19 @@
         </div>
 
         <br>
-        <p>Share Your Thoughts Below!</p>
-        <div class="container">
-            <div class="card mt-4">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        
-                        <form action="/comments/<%= article._id %>/comments" method="POST">
+        <form action="/comments/<%= article._id %>/comments" method="POST">
+            <p>Share Your Thoughts Below!</p>
+            <div class="container">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h4 class="card-title">
+
                             <div class="form-group">
                                 <label for="comment"></label>
                                 <textarea name="description"  class="form-control"></textarea>
                             </div>
                             <br>
                             <button type="Submit" class="btn btn-primary">Add Comment</button>
-                        </form>
                         </h4>
                     </div>
                 </div>
@@ -63,5 +62,5 @@
                     </div>
                     <% }); %>
             </div>
-        
+        </form>
         <%- include('../partials/footer') %>

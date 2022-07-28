@@ -17,7 +17,7 @@ async function index(req, res) {
     const response = await fetch(`${rootURL}` , { method: "GET" });
     const values = await response.json();
     const cryptos = values.data.coins;
-    res.render('articles/prices', {cryptos})
+    res.render('cryptos/all', {cryptos})
     console.log(cryptos)
 }
 

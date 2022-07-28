@@ -40,8 +40,8 @@
                             </div>
                             <br>
                             <button type="Submit" class="btn btn-primary">Add Comment</button>
-                        </form>
                         </h4>
+                    </form>
                     </div>
                 </div>
                 <% article.comments.forEach(function(a) { %>
@@ -57,7 +57,7 @@
                                 <%=a.name %>
                             </div>
                             <form action="/comments/<%= a._id %>?_method=DELETE" method="POST">
-                            <button type="submit" class="btn btn-danger">DELETE</button>
+                            <button type="delete" class="btn btn-danger">DELETE</button>
                             </form>
                         </div>
                     </div>

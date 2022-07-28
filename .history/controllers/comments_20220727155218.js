@@ -18,15 +18,8 @@ function create(req, res) {
     });
 }
 
-async function deleteComment(req, res, next) {
-    try {
-        const article = await Article.findOne({ 'comments._id': req.params.id, 'comments.userId': req.user._id }  );
-        console.log(article)
-        if (!article) throw new Error ('Will not work');
-        article.comments.remove(req.params.id);
-        await article.save();
-        res.redirect(`/articles/${article._id}`);
-    } catch (err) {
-        return next(err);
-    }
+function deleteComment(req, res) {
+    console.log("deleteComment")
+    articles.comments.remove(req.params.id);
+    res.redirect('/articles')
 }
