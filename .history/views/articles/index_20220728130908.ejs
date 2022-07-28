@@ -1,0 +1,28 @@
+<%- include('../partials/header') %>
+
+    <div class="container">
+        <br>
+        <h1 class="mb-4">Articles</h1>
+        <a href="/articles/new" class="btn btn-success btn-sm">New Article</a>
+
+
+        <% articles.forEach(function(a) { %>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <%=a.title %>
+                    </h4>
+                    <div class="card-date text-muted mb-2">
+                        <%=a.createdAt %>
+                    </div>
+                    <div class="card-text mb-2" card-body>
+                        <%=a.description %>
+                    </div>
+                    <a href="articles/<%= a.id %>" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+            <% }); %>
+    </div>
+
+
+    <%- include('../partials/footer') %>

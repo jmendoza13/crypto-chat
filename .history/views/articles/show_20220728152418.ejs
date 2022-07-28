@@ -7,13 +7,13 @@
             <div class="card-body">
                 <h4 class="card-title">
                     <h2>
-                        <%= article.title %>
+                        <!-- <%= article.title %> -->
                     </h2>
                 </h4>
 
                 <div class="card-date text-muted mb-2">
                     <p>
-                        <%= article.createdDate.toLocaleDateString() %>
+                        <%= article.createdAt %>
                     </p>
                 </div>
 
@@ -48,7 +48,7 @@
                     <div class="card mt-4">
                         <div class="card-body">
                             <div class="card-date text-muted mb-2">
-                                <%=a.createdDate.toLocaleDateString() %>
+                                <%=a.createdAt %>
                             </div>
                             <div class="card-text mb-2" card-body>
                                 <%=a.description %>

@@ -42,8 +42,6 @@ const articleSchema = new Schema({
         type: String,
     },
     comments: [commentSchema],
-}, {
-    timestamps: true
 })
 
 

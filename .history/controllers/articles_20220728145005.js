@@ -16,7 +16,6 @@ function index(req, res) {
 
 function show(req, res) {
   Article.findById(req.params.id, function(err, article) {
-    console.log(article.createdAt)
     res.render('articles/show', { article  })
   })
 };
@@ -41,11 +40,11 @@ function newArticle(req, res) {
 async function deleteArticle(req, res, next) {
   try {
       const article = await Article.findOne({ 'articles._id': req.params.id, 'articles.userId': req.user._id }  );
-      console.log(article.userId)
+      console.log(article)
       if (!article) throw new Error ('Will not work');
       article.remove(req.params.id);
       await article.save();
-      res.redirect('/articles');
+      res.redirect(`/articles/${article._id}`);
   } catch (err) {
       return next(err);
   }

@@ -16,7 +16,6 @@ function index(req, res) {
 
 function show(req, res) {
   Article.findById(req.params.id, function(err, article) {
-    console.log(article.createdAt)
     res.render('articles/show', { article  })
   })
 };

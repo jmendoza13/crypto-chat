@@ -12,11 +12,10 @@ body {
   font-family: Hack, monospace;
 }
 
-
-.card-img-top {
-  height:340px;
+/* .card-img-top {
+  height:auto;
   width:auto;
-}
+} */
 
 h1, h2, h3, h4, h5, h6, p, .a, .navbar-brand, .btn {
   font-family: 'Source Sans Pro', sans-serif;

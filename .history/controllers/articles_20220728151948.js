@@ -16,7 +16,6 @@ function index(req, res) {
 
 function show(req, res) {
   Article.findById(req.params.id, function(err, article) {
-    console.log(article.createdAt)
     res.render('articles/show', { article  })
   })
 };
@@ -45,7 +44,7 @@ async function deleteArticle(req, res, next) {
       if (!article) throw new Error ('Will not work');
       article.remove(req.params.id);
       await article.save();
-      res.redirect('/articles');
+      res.redirect(`/articles/${article._id}`);
   } catch (err) {
       return next(err);
   }

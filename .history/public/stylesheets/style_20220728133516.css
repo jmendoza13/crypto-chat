@@ -13,6 +13,13 @@ body {
 }
 
 
+
+ #gIcon {
+  width: 34px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
 .card-img-top {
   height:340px;
   width:auto;

@@ -15,15 +15,15 @@
                         <%=a.title %>
                     </h4>
                     <div class="card-date text-muted mb-2">
-                        <%=a.createdDate.toLocaleDateString() %>
+                        <%=a.createdAt %>
                     </div>
                     <div class="card-text mb-2" card-body>
                         <%=a.description %>
                     </div>
                     <div>
-                    <a href="articles/<%= a._id %>" class="btn btn-primary btn-sm">Read More</a>
-                    <% if (user && a.userId.equals(user._id)) { %>
-                        <form action="/articles/<%= a._id %>?_method=DELETE" method="POST" class="d-inline">
+                    <a href="articles/<%= a.id %>" class="btn btn-primary btn-sm">Read More</a>
+                    <% if (user && a.userId.equals(userId_id)) { %>
+                        <form action="/articles/<%= a._id %>?_method=DELETE" method="POST">
                         <button type="submit" class="btn btn-danger btn-sm">DELETE</button>
                         </form>
                         <% } %>

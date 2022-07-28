@@ -13,19 +13,21 @@
 <title>CryptoChat</title>
 </head>
 
-<body> 
+<body>  
       <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="/">CryptoChat</a>
-        <li><a href="/">Home Page</a></li>
-        <li><a href="/articles">Articles</a></li>
-        <li><a href="/prices">Crypto Prices</a></li>
-        <li>
+        <a href="/">Home Page</a>
+        <a href="/articles">Articles</a>
+        <a href="/prices">Crypto Prices (API)</a>
           <% if (user) { %>
             <a href="/logout">LOG OUT</a>
           <% } else { %>
             <a href="/auth/google" class="login">LOG IN&nbsp;</a>
           <% } %>
-          <li>
+
+            <!-- <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
             </form>
       </nav>
     

@@ -13,7 +13,7 @@
 
                 <div class="card-date text-muted mb-2">
                     <p>
-                        <%= article.createdDate.toLocaleDateString() %>
+                        <%= article.createdAt %>
                     </p>
                 </div>
 
@@ -48,7 +48,7 @@
                     <div class="card mt-4">
                         <div class="card-body">
                             <div class="card-date text-muted mb-2">
-                                <%=a.createdDate.toLocaleDateString() %>
+                                <%=a.createdAt %>
                             </div>
                             <div class="card-text mb-2" card-body>
                                 <%=a.description %>
@@ -56,7 +56,7 @@
                             <div class="card-text mb-2" card-body>
                                 <%=a.name %>
                             </div>
-                            <% if (user && a.userId.equals(user._id)) { %>
+                            <% if (user && c.user.equals(user._id)) { %>
                             <form action="/comments/<%= a._id %>?_method=DELETE" method="POST">
                             <button type="submit" class="btn btn-danger btn-sm">DELETE</button>
                             </form>
