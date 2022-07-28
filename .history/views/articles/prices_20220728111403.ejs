@@ -7,9 +7,9 @@
   <thead>
     <tr>
       
-      <th class="text-center" scope="col">Rank</th>
-      <th class="text-center" scope="col">Name</th>
       <th class="text-center" scope="col">Symbol</th>
+      <th class="text-center" scope="col">Name</th>
+      <th class="text-center" scope="col">Rank</th>
       <th class="text-center" scope="col">USD Price</th>
       <th class="text-center" scope="col">BTC Price</th>
       <th class="text-center" scope="col">24H Change</th>
@@ -19,9 +19,9 @@
 
   <% cryptos.forEach(x => { %>
       <tr>
-      <td class="text-center"> <%= x.rank %></td>
-      <td class="text-center"> <%= x.name %></td>
       <td class="text-center"> <%= x.symbol %></td>
+      <td class="text-center"> <%= x.name %></td>
+      <td class="text-center"> <%= x.rank %></td>
       <td class="text-center"> <%= x.price_usd %></td>
       <td class="text-center"> <%= x.price_btc %></td>
       <td class="text-center"> <%= x.percent_change_24h %></td>
