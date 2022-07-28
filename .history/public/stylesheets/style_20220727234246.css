@@ -19,8 +19,7 @@ body {
 }
 
 .card-img-top {
-  height:340px;
-  width:auto;
+
 }
 
 h1, h2, h3, h4, h5, h6, p, .a, .navbar-brand, .btn {
@@ -41,6 +40,12 @@ p {
   color: #637381 !important;
 }
 
+.custom-button {
+  background-color: #ff6255;
+  border-radius: 3px;
+  border-color: #ff6255 ;
+  font-weight: 600;
+}
 
 .purple {
   background: linear-gradient(26deg,#5137AD, #6C4DCC 75%);

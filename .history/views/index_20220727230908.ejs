@@ -1,8 +1,10 @@
 <%- include('./partials/header') %>
 
-<br>
+<h1><%= title %></h1>
 
-<h1> Welcome to <%= title %></h1>
+
+
+
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -24,11 +26,30 @@
       <div class="container">
         <div class="row vertical-align-middle mt-5 mb-5">
           <div class="col-md-6">
-            <h1 class="text-inverse">CryptoChat is a place to to put your money where your mouth is. Read, post & comment on articles based around your favorite cryptocurrencies. </h1>
+            <h1 class="text-inverse">CryptoChat is a place to to put your money where your mouth is! In our website you are able to read, post & comment on articles based around your favorite cryptocurrencies. </h1>
           </div>
         </div>
       </div>
     </div>
+  
+    <div class="container mt-5 mb-4">
+  <div class="row">
+    <div class="col-md-6">
+      <p>Excellent Business Plans offers great resources that help you grow your business. Download our free templates or purchase one of many professional business plans.</p>
+    </div>
+    <div class="col-md-6">
+      <form>
+        <div class="form-group right ml-2">
+          <button type="submit" class="btn btn-primary custom-button">Submit</button>
+        </div>
+        <div class="form-group left">
+          <input type="email" class="form-control" placeholder="name@example.com">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
   
     <div style="border-bottom: 1px solid #dfe3e8;">
     </div>
@@ -40,11 +61,11 @@
       <div class="row d-flex justify-content-between">
         <div class="col-md-4 mb-4">
           <div class="card text-center">
-            <img class="card-img-top" src="https://cdn.syncfusion.com/content/images/FT/Blazor/case-studies/new_Blog.png?v=15062022004111" alt="Card image cap">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1595087873528-1fe582a3b302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGF0b3B8ZW58MHx8MHx8&w=1000&q=80" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Articles</h4>
-              <p class="card-text">Read, add & comment on articles that are posted daily by users</p>
-              <a href="#" class="btn btn-primary custom-button">View Articles</a>
+              <p class="card-text">Read, add or comment on articles/blog posts daily</p>
+              <a href="#" class="btn btn-primary custom-button">Read more</a>
             </div>
           </div>
         </div>
@@ -54,18 +75,17 @@
             <div class="card-body">
               <h4 class="card-title">Crypto Prices</h4>
               <p class="card-text">Compare the most updated data on cryptocurrencies globally</p>
-              <a href="#" class="btn btn-primary custom-button">View Crypto Prices</a>
+              <a href="#" class="btn btn-primary custom-button">Read more</a>
             </div>
           </div>
         </div>
-
         <div class="col-md-4 mb-4">
           <div class="card text-center">
             <img class="card-img-top" src="https://cdn.dribbble.com/users/5745266/screenshots/13932589/untitled-1__9__4x.png" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Developer's GitHub</h4>
               <p class="card-text">View more details about this project, paired with screenshots, wireframes & more</p>
-              <a href="#" class="btn btn-primary custom-button">View Dev's GitHub</a>
+              <a href="#" class="btn btn-primary custom-button">Read more</a>
             </div>
           </div>
         </div>
@@ -79,7 +99,7 @@
             <img class="imgAbout" src="https://seeklogo.com/images/G/general-assembly-logo-D5C634F07A-seeklogo.com.png">
           </div>
           <div class="col-md-6">
-            <h2>About CryptoChat</h2>
+            <h2>About this Project</h2>
             <p>CryptoChat is the second project I chose to do for the Software Engineer Immersive course at General Assembly. This project features JavaScript, HTML, CSS, NodeJs, Express, MongoDB, Bootstrap & more. None of this would be possible without my SEI-621 Cohort, the IAs' and the lead instructor, Jim Clark. <p>
           </div>
         </div>
@@ -88,6 +108,10 @@
       
 </body>
   
-
+<footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</footer
 
 <%- include('./partials/footer') %>
