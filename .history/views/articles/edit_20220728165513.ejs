@@ -1,0 +1,35 @@
+<%- include('../partials/header') %>
+
+<br>
+<h1>Edit your Article</h1>
+
+<form action="/articles/<%= article._id %>?_method=PUT" method="POST">
+
+<body>
+
+<div class="form-group">
+    <label for="title">Title</label>
+    <input required type="text" name="title" class="form-control">
+</div>
+<br>
+
+<div class="form-group">
+    <label for="description">Description</label>
+    <textarea required name="description" name="description" class="form-control"></textarea>
+</div>
+<br>
+
+
+<button type="Submit" class="btn btn-primary btn-sm">Edit Article</button>
+<a href="/articles" class="btn btn-secondary btn-sm">Cancel</a>
+
+</form>
+</body>
+
+
+
+
+
+
+
+<%- include('../partials/footer') %>

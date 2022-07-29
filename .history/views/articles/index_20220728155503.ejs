@@ -22,8 +22,8 @@
                     </div>
                     <div>
                     <a href="articles/<%= a._id %>" class="btn btn-primary btn-sm">Read More</a>
+                    <a href="articles/edit"
                     <% if (user && a.userId.equals(user._id)) { %>
-                        <a href="articles/edit/<%=a._id %>" class="btn btn-info btn-sm">Edit</a>
                         <form action="/articles/<%= a._id %>?_method=DELETE" method="POST" class="d-inline">
                         <button type="submit" class="btn btn-danger btn-sm">DELETE</button>
                         </form>

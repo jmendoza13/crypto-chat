@@ -6,7 +6,6 @@ module.exports = {
     new: newArticle,
     create,
     delete: deleteArticle,
-    update,
     edit,
 }
 
@@ -58,31 +57,3 @@ function edit(req, res, next) {
     res.render('articles/edit', { article })
   })
 }
-
-function update(req, res) {
-  Article.findOneAndUpdate(
-    {_id: req.params.id, user: req.user._id},
-    req.body,
-    {new: true},
-    function(err, article) {
-      if (err || !article) return res.redirect('/articles');
-      res.redirect(`/articles/${article._id}`);
-    }
-  );
-}
-    
-
-// function update(req, res) {
-//   Post.findOne(
-//     {'comments._id': req.params.id},
-//     function(err, post) {
-//       const commentSubdoc = post.comments.id(req.params.id);
-//       if (!commentSubdoc.user.equals(req.user._id)) return res.redirect(`/posts/${post._id}`);
-//       commentSubdoc.content = req.body.content;
-//       post.save(function(err) {
-//         res.redirect(`/posts/${post._id}`);
-//       });  
-//     }
-//   );
-// }
-

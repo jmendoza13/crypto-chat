@@ -7,7 +7,7 @@ router.get('/', articlesCtrl.index);
 router.get('/new',isLoggedIn, articlesCtrl.new);
 router.get('/:id', articlesCtrl.show);
 router.get('/edit/:id',isLoggedIn, articlesCtrl.edit)
-router.put('/:id',isLoggedIn, articlesCtrl.update);
+//router.put('/:id',isLoggedIn, articlesCtrl.update);
 router.post('/',isLoggedIn, articlesCtrl.create);
 router.delete('/:id',isLoggedIn, articlesCtrl.delete);
 
