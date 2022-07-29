@@ -48,7 +48,7 @@ async function deleteArticle(req, res, next) {
         return next(err);
     }
   }
-  
+  }
 
 function edit(req, res, next) {
   Article.findById(req.params.id, function(err, article){

@@ -1,0 +1,93 @@
+<%- include('./partials/header') %>
+
+<br>
+
+<h1> Welcome to <%= title %></h1>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#resources">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="jumbotron jumbotron-fluid purple">
+      <div class="container">
+        <div class="row vertical-align-middle mt-5 mb-5">
+          <div class="col-md-6">
+            <h1 class="text-inverse">CryptoChat is a place to to put your money where your mouth is. Read, post & comment on articles based around your favorite cryptocurrencies. </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div style="border-bottom: 1px solid #dfe3e8;">
+    </div>
+  
+    <div class="container full-page mt-5" id="resources">
+      <div class="text-center mb-5">
+        <h2>Resources<h2>
+      </div>
+      <div class="row d-flex justify-content-between">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <img class="card-img-top" src="https://cdn.syncfusion.com/content/images/FT/Blazor/case-studies/new_Blog.png?v=15062022004111" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Articles</h4>
+              <p class="card-text">Read, add & comment on articles that are posted daily by users</p>
+              <a href="/articles" class="btn btn-primary custom-button">View Articles</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <img class="card-img-top" src="https://dailyhodl.com/wp-content/uploads/2022/02/merten-on-track.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Crypto Prices</h4>
+              <p class="card-text">Compare the most updated data on cryptocurrencies globally</p>
+              <a href="/prices" class="btn btn-primary custom-button">View Crypto Prices</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <img class="card-img-top" src="https://cdn.dribbble.com/users/5745266/screenshots/13932589/untitled-1__9__4x.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Developer's GitHub</h4>
+              <p class="card-text">View more details about this project, paired with screenshots, wireframes & more</p>
+              <a href="https://github.com/jmendoza13/crypto-chat" class="btn btn-primary custom-button">View Dev's GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="imgAbout" src="https://seeklogo.com/images/G/general-assembly-logo-D5C634F07A-seeklogo.com.png">
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-justify">About CryptoChat</h2>
+            <p>CryptoChat is the second project I chose to do for the Software Engineer Immersive course at General Assembly. This project features JavaScript, HTML, CSS, NodeJs, Express, MongoDB, Bootstrap & more. None of this would be possible without my SEI-621 Cohort, the IAs' and the lead instructor, Jim Clark. <p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+</body>
+  
+
+
+<%- include('./partials/footer') %>

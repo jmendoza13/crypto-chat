@@ -41,6 +41,7 @@ function newArticle(req, res) {
 }
 
 async function deleteArticle(req, res, next) {
+  async function deleteArticle(req, res, next) {
     try {
         await Article.findOneAndDelete({ _id: req.params.id, userId: req.user._id });
         res.redirect('/articles');
@@ -48,7 +49,7 @@ async function deleteArticle(req, res, next) {
         return next(err);
     }
   }
-  
+  }
 
 function edit(req, res, next) {
   Article.findById(req.params.id, function(err, article){
